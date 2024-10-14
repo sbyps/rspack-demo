@@ -123,9 +123,9 @@ importers:
       path:
         specifier: ^0.12.7
         version: 0.12.7
-      postcss-px-to-viewport-8-plugin:
-        specifier: ^1.2.5
-        version: 1.2.5
+      postcss-px-conversion:
+        specifier: ^0.1.3
+        version: 0.1.3(postcss@8.4.47)
       prettier:
         specifier: ^2.8.1
         version: 2.8.8
@@ -3000,8 +3000,11 @@ packages:
     peerDependencies:
       postcss: ^8.4.31
 
-  postcss-px-to-viewport-8-plugin@1.2.5:
-    resolution: {integrity: sha512-+yc69+q/euV7iKh5fGXY6C/lpepmVx2DGFHeYj5BpzIFyBBpdACDjZyrZ8AV0kCg+J0bplBv4ZA1QTzgaK0rGg==}
+  postcss-px-conversion@0.1.3:
+    resolution: {integrity: sha512-c16wtajlHhs2ucq84nhZyCmvBRw9YSlhn5wibljbFdN4oaSieiflcv960gw2TouLh7ZFPk/OY3ofzs3J/3STAQ==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      postcss: '>=8.0.0'
 
   postcss-reduce-initial@7.0.2:
     resolution: {integrity: sha512-pOnu9zqQww7dEKf62Nuju6JgsW2V0KRNBHxeKohU+JkHd/GAH5uvoObqFLqkeB2n20mr6yrlWDvo5UBU5GnkfA==}
@@ -7422,9 +7425,9 @@ snapshots:
       postcss: 8.4.47
       postcss-value-parser: 4.2.0
 
-  postcss-px-to-viewport-8-plugin@1.2.5:
+  postcss-px-conversion@0.1.3(postcss@8.4.47):
     dependencies:
-      object-assign: 4.1.1
+      postcss: 8.4.47
 
   postcss-reduce-initial@7.0.2(postcss@8.4.47):
     dependencies:

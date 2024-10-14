@@ -54,7 +54,7 @@
     "jest-transform-stub": "^2.0.0",
     "ora": "^3.0.0",
     "path": "^0.12.7",
-    "postcss-px-to-viewport-8-plugin": "^1.2.5",
+    "postcss-px-conversion": "^0.1.3",
     "prettier": "^2.8.1",
     "typescript": "~4.5.5"
   },

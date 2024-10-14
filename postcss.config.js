@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
     autoprefixer: {},
-    'postcss-px-to-viewport-8-plugin': {
+    'postcss-px-conversion': {
       unitToConvert: 'px', //需要转换的单位，默认为"px"
       viewportWidth: 375, // 视窗的宽度，对应的是我们设计稿的宽度
       viewportHeight: 667, //视窗的高度，根据375设备的宽度来指定，一般指定667，也可以不配置
@@ -14,9 +14,9 @@ module.exports = {
       mediaQuery: false, // 允许在媒体查询中转换`px`
       replace: true, //是否直接更换属性值，而不添加备用属性
       exclude: [/node_modules/], //忽略某些文件夹下的文件或特定文件，例如 'node_modules' 下的文件
-      landscape: true, //是否添加根据 landscapeWidth 生成的媒体查询条件 @media (orientation: landscape)
+      enableLandscape: true, //是否添加根据 landscapeWidth 生成的媒体查询条件 @media (orientation: landscape)
       landscapeUnit: 'vw', //横屏时使用的单位
-      landscapeWidth: 750, //横屏时使用的视口宽度
+      landscapeViewportWidth: 750, //横屏时使用的视口宽度
     },
   },
 };
