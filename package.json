@@ -7,8 +7,8 @@
     "test:unit": "jest",
     "coverage": "jest --coverage",
     "analyze": "RSDOCTOR=true rsbuild dev",
-    "analyze:prod": "RSDOCTOR=true rsbuild build && npm run checkES6:dist",
-    "build": "DEBUG=rsbuild rsbuild build && npm run checkES6:dist",
+    "analyze:prod": "RSDOCTOR=true rsbuild build",
+    "build": "rsbuild build",
     "preview": "rsbuild preview",
     "dev": "rsbuild dev",
     "checkES6:dist": "eslint --ext .js --no-eslintrc --no-ignore dist"

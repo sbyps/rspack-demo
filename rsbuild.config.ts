@@ -50,6 +50,23 @@ export default defineConfig({
   html: {
     mountId: 'app',
     template: './public/index.html',
+    inject: false,
+    tags: [
+      {
+        tag: 'script',
+        publicPath: false,
+        head: false,
+        attrs: {
+          src: 'https://cdn.bootcdn.net/ajax/libs/eruda/3.2.1/eruda.min.js',
+        },
+      },
+      {
+        tag: 'script',
+        publicPath: false,
+        head: false,
+        children: 'window.eruda && window.eruda.init();',
+      },
+    ],
   },
   output: {
     polyfill: 'entry',
